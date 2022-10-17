@@ -4,15 +4,19 @@
     padding: 0;
 }
 
+p, h4{
+    text-align: justify;
+    padding: 0 20px;
+}
+
 body{
     width: 100vw;
-    min-height: 100vh;
     height: auto;
 }
 
 .contents{
     width: 100%;
-    height: 100%;
+    height: 100vh;
 } .contents > .header{
     display: flex;
     justify-content: center;
@@ -23,4 +27,90 @@ body{
     align-items: center;
 } .contents > .header > header > h1 , .contents > .header > header > p {
     padding: 0 10px;
+}
+
+.main {
+    margin-top: 1%;
+} .main > h3{
+    text-align: center;
+}
+
+.container {
+    display: flex;
+} .container .card {
+    width: auto;
+    height: auto;
+    justify-content: space-around;
+    box-shadow: 0 0 5px black;
+    border-radius: 10px;
+    margin: 20px;
+    padding-bottom: 5px;
+    transition: all 1s ease-in-out;
+} .container .card .img {
+    height: 250px;
+    padding: 0;
+    margin: 0;
+    background-color: turquoise;
+    margin-bottom: 10px;
+    border-radius: 10px 10px 0 0;
+} .container .card:hover{
+    transform: scale(1.03);
+}
+
+.header > button {
+    display: none;
+}
+
+@media (max-width: 1000px) {
+    .container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card {
+        max-width: 500px;
+    }
+}
+
+@media (max-width: 840px) {
+    .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .card {
+        max-width: 500px;
+    } .card > .img {
+        display: none;
+    }
+
+    .card:hover {
+        transform: none;
+    }
+
+    .header > button {
+        display:flex;
+        align-items: center;
+        height: 20px;
+        margin-top: 10px;
+    }
+}
+
+@media (max-width: 500px) {
+    .container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .card{
+        max-width: 250px;
+    } .card > .img {
+        display: none;
+    }
+
+    .card:hover {
+        transform: none;
+    }
 }
