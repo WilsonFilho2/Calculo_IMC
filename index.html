@@ -50,19 +50,35 @@
                 </section>
                 <section class="section-2">
                     <div class="calculadora">
-                        <label for="Altura">Altura: </label>
-                        <input type="text" name="" id="Altura">
-                        <label for="Altura">m</label>
-                        <label for="Peso">Peso: </label>
-                        <input type="text" name="" id="Peso">
-                        <label for="Peso">kg</label>
-                        <div class="dados-adicionais">
-                            <input type="radio" name="dados" id="Idoso">
-                            <label for="Idoso">Idoso</label>
-                            <input type="radio" name="dados" id="Jovem">
-                            <label for="Jovem">Jovem</label>
+                        <div class="entrada">
+                                <p class="entradas">
+                                    <label for="Altura">Altura: </label>
+                                    <input type="text" name="" id="Altura">
+                                </p>
+                                <p class="entradas">
+                                    <label for="Peso">Peso: </label>
+                                    <input type="text" name="" id="Peso">
+                                </p>
+                            <div class="dados-adicionais">
+                                <ul>
+                                    <li>
+                                        <input type="radio" name="dados" id="Idoso">
+                                        <label for="Idoso">Idoso</label>
+                                    </li>
+                                    <li>
+                                        <input type="radio" name="dados" id="Jovem">
+                                        <label for="Jovem">Jovem</label>
+                                    </li>
+                                </ul>
+                            </div>
+                            <button id="botao-calculo">Calcular</button>
                         </div>
-                        <button id="botao-calculo">Calcular</button>
+                        <div class="resultado">
+                            <div class="img">
+                                <img src="" alt="">
+                            </div>
+                            <p>Resultado: </p>
+                        </div>
                     </div>
                 </section>
             </main>
