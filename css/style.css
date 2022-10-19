@@ -54,11 +54,14 @@ body{
     height: 250px;
     padding: 0;
     margin: 0;
-    background-color: turquoise;
+    background-color: white;
     margin-bottom: 10px;
     border-radius: 10px 10px 0 0;
+    text-align: center;
 } .container .card:hover{
     transform: scale(1.03);
+} .container .card .img img {
+    height: 250px;
 }
 
 @media (max-width: 1000px) {
@@ -84,6 +87,10 @@ body{
 .main > main{
     display: flex;
     justify-content: space-between;
+}
+
+.main > main > .section-1 > p {
+    padding: 80px 40px;
 }
 
 .main > main > .section-2 > .calculadora{
