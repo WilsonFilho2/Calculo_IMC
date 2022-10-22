@@ -50,9 +50,18 @@ function Idoso () {
     }
 }
 
+function verificar_altura(valor){
+    if (!valor.value.includes(".")) {
+        valor = parseFloat(valor.value) / 100;
+    } else {
+        valor = parseFloat(valor.value);
+    }
+    return valor;
+}
+
 function calcular(){
     //Conversão
-    altura = parseFloat(input_altura.value) 
+    altura = verificar_altura(input_altura)
     peso = parseFloat(input_peso.value)
 
 
